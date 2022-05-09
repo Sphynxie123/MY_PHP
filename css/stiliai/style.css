@@ -1,0 +1,48 @@
+.solid {
+    height: 200px;
+    width: 99%;
+    border-style: solid;
+    border-color: green;
+    margin: 5px;
+}
+.border {
+
+    height: 20px;
+    width: 60px;
+    border-style: solid;
+    border-color: green;
+    margin: auto;
+    margin-top: 1,5%;
+}
+.black{
+    height: 200px;
+    width: 33.3%;
+    /* border-style: dotted; */
+    background-color: black;
+    display: inline-block;
+}
+
+.red{
+    height: 200px;
+    width: 33.3%;
+    /* border-style: dotted; */
+    background-color: red;
+    display: inline-block;
+}
+.blue{
+    height: 200px;
+    width: 33.3%;
+    /* border-style: groove; */
+    background-color: blue;
+    display: inline-block;
+
+}
+.inline {
+    font-size: 0;
+}
+
+h1 {
+    text-align: center;
+    
+}
+

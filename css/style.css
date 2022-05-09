@@ -1,0 +1,13 @@
+body {
+    background-color: green; 
+}
+/* Importand eample*/
+h1 {
+    color:red !important;
+}
+ul li {
+    background-color: red;
+}
+li:not(.diff) {
+    background-color: rgb(255, 0, 128);
+}
