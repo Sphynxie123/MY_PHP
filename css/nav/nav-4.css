@@ -4,11 +4,12 @@ nav > ul > li {
 li {
     display: inline-block;
     text-align: center;
-    border: 1px solid blue;
+    border: 1px solid black;
     width: 80px;
     height: 20px;
     margin: 10px 0px;
     padding: 5px;
+    
   }
 li > a{
     text-decoration: none;
