@@ -1,0 +1,14 @@
+nav > ul > li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li > a{
+    text-decoration: none;
+    color: black;
+}
+
+li >a:hover {
+    background-color: rgb(31, 148, 168);
+    color: white;
+}
