@@ -1,0 +1,23 @@
+nav > ul > li {
+    list-style-type: none;
+}
+li {
+    text-align: center;
+    width: 200px;
+    height: 20px;
+    margin: 10px 0px;
+    padding: 2px;
+  }
+li > a{
+    display: block;
+    padding: 2px;
+    background-color: rgb(46, 10, 80);
+    text-decoration: none;
+    color: red;
+ }
+
+li > a:hover {
+   background: rgb(31, 148, 168);
+   color: white;
+}
+
