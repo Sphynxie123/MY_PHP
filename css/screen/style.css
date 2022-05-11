@@ -4,7 +4,7 @@
         background-color: red;
     }
 }
-@media only screen and (min-width: 480px) and (max-width: 800px;) {
+@media only screen and (min-width: 480px) and (max-width: 800px) {
     div {
         background-color: green;
     }
