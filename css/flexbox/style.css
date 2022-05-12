@@ -38,18 +38,47 @@ div {
     
     }
     .seven,.eight, .nine, .ten {
-        width: 40%;
+        width: 49%;
+        flex-grow: 1;
         height: 50px;
         background-color: bisque;
     } 
 }
 @media only screen and (min-width:1024px){
-    .container {
+    .container2 {
         display: flex;
-        flex-flow: row nowrap;
+        flex-wrap: wrap;
+        /* flex-direction: column-reverse; */
+    }
+    .seven,.eight, .nine, .ten {
+        width: 49%;
+        flex-grow: 1;
+        height: 50px;
+        background-color: bisque;
+    } 
+    .container3 {
+        display: flex;
+        flex-wrap: wrap;
     }
     .one, .two{
-        width: 40%;
+        flex-grow: 1;
+        width: 49%;
         height: 40%;
     }
+    .three {
+        
+        height: 150px;
+    }
+    .container4 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .four, .five,.six {
+        flex-grow: 1;
+        width: 30%;
+        height: 150px; 
+    }
+    
+    
 }
