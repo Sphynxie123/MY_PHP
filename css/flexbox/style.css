@@ -44,7 +44,7 @@ div {
         flex-wrap: wrap;
     }
     .seven,.eight, .nine, .ten {
-        width: 49%;
+        width: 24%;
         flex-grow: 1;
         height: 50px;
         background-color: bisque;
