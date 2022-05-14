@@ -15,7 +15,7 @@ li {
 a {
     display: block;
     text-decoration: none;
-    border: 1px solid black;
+    border: 1px solid grey;
     padding: 4px;
 }
 a:hover {
@@ -23,7 +23,9 @@ a:hover {
     color:white;
 }
 a:visited{
+    display: block;
     color:blue;
+    padding: 4px;
 }
 @media only screen and (min-width: 375px) {
 	ul {
