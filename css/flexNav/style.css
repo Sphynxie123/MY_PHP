@@ -1,0 +1,32 @@
+ul {
+    display: flex;
+    flex-direction: column;
+}
+li {
+    list-style-type: none;
+    text-align: center;
+    height: 20px;
+    width: 100%;
+    margin: 2px;
+    /* border: 1px solid black; čia nereikia, nes pasidaro papildomas borders
+    ir norint vėliau jį nudažyti nenusidažo
+     */
+}
+a {
+    display: block;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 4px;
+}
+a:hover {
+    background-color: grey;
+    color:white;
+}
+a:visited{
+    color:blue;
+}
+@media only screen and (min-width: 375px) {
+	ul {
+		flex-direction: row;
+	}
+}
