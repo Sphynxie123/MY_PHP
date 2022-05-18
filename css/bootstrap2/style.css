@@ -29,6 +29,7 @@
     
 }
 .center2 {
+    /* arba align-items: center; */
     margin-top: 60%;
 }
 .circle {
@@ -42,3 +43,4 @@
     /* background-color:grey; */
     
 }
+
