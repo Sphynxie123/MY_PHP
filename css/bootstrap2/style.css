@@ -1,0 +1,44 @@
+.pictures{
+    height: 100%;
+    width: 100% !important;
+}
+
+.height-100-px{
+    margin-top: 10px;
+    height: 100px;    
+}
+.margin-10-px{
+    margin: 10px 10px 10px 0px;
+}
+
+.height-300-px{
+    margin-top: 10px;
+    height: 300px;    
+}
+.text-center{
+    text-align: auto;
+}
+.width-60{
+    width: 60%;
+}
+.width-55{
+    width: 55%;
+}
+.center {
+    text-align: center;
+    
+}
+.center2 {
+    margin-top: 60%;
+}
+.circle {
+    border: 1px solid black;
+    border-radius: 80px;
+    height: 50px;
+    width: 50px;
+    background: url(cross-circle.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-color:grey; */
+    
+}
