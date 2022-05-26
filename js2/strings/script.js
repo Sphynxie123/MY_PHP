@@ -10,7 +10,7 @@
 // t.y. ``, sukurkite H2 tag, kuris, nurodo “User Information” ir 
 // <p> tag’ą, kuriame pateiktas, toks sakinys “Vartotojo vardas yra (vardas), o pavardė (pavardę).”
 
-let userInfoOutput = document.createElementId('main');
+let userInfoOutput = document.createElement('main');
 // object creation
 let user = {
     name: "Mantas",
