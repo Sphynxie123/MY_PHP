@@ -22,6 +22,8 @@ const buttonCopy = document.querySelector('button')
 
 function copyPaste (){
     pasteInput[0].value = copyInput[0].value;
+    pasteInput?.pasteInput;
+    copyInput?.copyInput;
 }
 
 
