@@ -2,13 +2,14 @@
 const heightOutput = document.querySelector('#height');
 const widthOutput = document.querySelector('#width');
 
-function reportWindowSize() {
+function resizeListener() {
   if (heightOutput && widthOutput){
     heightOutput.textContent = window.innerHeight;
     widthOutput.textContent = window.innerWidth;
   }
 }
 
-window.onresize = reportWindowSize;
+// window.onresize = reportWindowSize;
+window.addEventListener("resize", resizeListener);
 
 // resize - pakeisti dydi
