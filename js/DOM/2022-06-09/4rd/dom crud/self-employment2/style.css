@@ -1,4 +1,7 @@
 /* Style the navigation menu */
+body {
+    background-color: beige;
+}
 .topnav {
     overflow: hidden;
     background-color: #333;
@@ -43,7 +46,7 @@
     background-color: red;
     font-size: 300px;    
  }
- #first, #time, #form {
+ #first, #time, #form, footer {
     width: 100%;
     background-color: beige;
  }
@@ -57,4 +60,7 @@
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+  }
+  footer {
+    text-align: center;
   }
