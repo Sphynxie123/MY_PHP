@@ -43,8 +43,7 @@ body {
     color: white;
   }
   span {
-    background-color: red;
-    font-size: 300px;    
+    font-size: 300px;     
  }
  #first, #time, #form, footer {
     width: 100%;
