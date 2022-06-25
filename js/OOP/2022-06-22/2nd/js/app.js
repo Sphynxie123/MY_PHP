@@ -5,12 +5,12 @@
 // 2. getProfit, kuris grąžins sumą, kurią uždirbo (pelną) filmas.
 // Testavimui, sukurkite du filmus, kurie turės nurodytas savybes ir metodus.
 
-let Dzon = new Movie('Mantas', 1999, 'Director1', 5000, 1000000,);
-let Tom = new Movie('Thomas', 2005, 'Director2', 10000, 5000000);
-console.log(Dzon);
-console.log(Dzon.getIntroduction());
-console.log(Dzon.getProfit());
+let dzon = new Movie('Mantas', 1999, 'Director1', 5000, 1000000);
+let tom = new Movie('Thomas', 2005, 'Director2', 10000, 5000000);
+console.log(dzon);
+console.log(dzon.getIntroduction());
+console.log(dzon.getProfit());
 
-console.log(Tom);
-console.log(Tom.getIntroduction());
-console.log(Tom.getProfit());
+console.log(tom);
+console.log(tom.getIntroduction());
+console.log(tom.getProfit());

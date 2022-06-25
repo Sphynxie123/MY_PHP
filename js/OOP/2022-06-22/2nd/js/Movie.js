@@ -17,6 +17,7 @@ class Movie {
         return `${this.name} ${this.year} and ${this.director}`;
     }
     getProfit(){
+        // iš vieno atimam kitą
         return this.income - this.budget;
     }
 }
