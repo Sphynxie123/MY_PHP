@@ -5,7 +5,7 @@ let btn = document.querySelector('.btn');
 
 btn?.addEventListener('click', () => {
     myFunction();
-})
+});
 
 let inputCaseChange = document.querySelector('#input-case-change');
 
@@ -44,8 +44,7 @@ let btnSave = document.querySelector('#btnSave');
 let emailCheck = document.querySelector('#emailCheck');
 let phoneCheck = document.querySelector('#phoneCheck');
 // console.log(idEmail);
-btnSave?.addEventListener('click', function() {
-        // 
+btnSave?.addEventListener('click', function() {        
     if (!idEmail.value.includes('@') && idPhone.value == "") {
         idEmail.classList.add('is-invalid');
         emailCheck.style.display = 'block';
@@ -78,12 +77,12 @@ function myUnBlock() {
 btnBlock?.addEventListener('click', () => {
     
     myBlock();
-})
+});
 
 btnUnblock?.addEventListener('click', () => {
     
     myUnBlock();
-})
+});
 
 let img = document.querySelector('#image');
 // keičiasi foto užvedant pele ir patraukiant
@@ -93,23 +92,86 @@ img?.addEventListener('mouseenter', function() {
 img?.addEventListener('mouseleave', function() {
     img.setAttribute('src', 'https://i.imgur.com/0DElr0H.jpg');
 });
+// Cursor
+function myCursorPointer() {
+    document.querySelector('#colorText').style.cursor = 'pointer';
+}
+function myCursorText() {
+    document.querySelector('#colorText').style.cursor = 'text';
+}
+function myCursorHelp() {
+    document.querySelector('#colorText').style.cursor = 'help';
+}
+let cursorPointer = document.querySelector('#cursorPointer');
+let cursorHelp = document.querySelector('#cursorHelp');
+let cursorText = document.querySelector('#cursorText');
 
-
-// function myFunction(){
-//     alert('Hello World!');
-// }
-// let btn = document.querySelector('.btn');
-
-// btn?.addEventListener('click', () => {
-//     myFunction();
-// })
-
-let colorRed = document.querySelector('#colorRed');
-
-colorRed?.addEventListener('click', function(){
-    colorRed.style.color = 'red';
+cursorPointer?.addEventListener('click', () => {
+    myCursorPointer();
 });
-// function myColorRed(){
-    
-// }
+cursorText?.addEventListener('click', () => {
+    myCursorText();
+});
+cursorHelp?.addEventListener('click', () => {
+    myCursorHelp();
+});
+// text color
+function myColorRed(){
+	document.querySelector('#colorText').style.color = "red";
+}
+function myColorGreen(){
+	document.querySelector('#colorText').style.color = "green";
+}
+function myColorBlue(){
+	document.querySelector('#colorText').style.color = "blue";
+}
+let colorRed = document.querySelector('#colorRed');
+let colorGreen = document.querySelector('#colorGreen');
+let colorBlue = document.querySelector('#colorBlue');
 
+colorRed?.addEventListener('click', () => {
+    myColorRed();
+});
+colorGreen?.addEventListener('click', () => {
+    myColorGreen();
+});
+colorBlue?.addEventListener('click', () => {
+    myColorBlue();
+});
+// border color
+function myBorderColorRed(){
+    // kodel netinka borderColor = "1px solid red"; ????
+    document.querySelector('#colorText').style.outline = "1px solid red";
+}
+function myBorderColorGreen(){
+    document.querySelector('#colorText').style.outline = "1px solid green";
+}
+function myBorderColorBlue(){
+    document.querySelector('#colorText').style.outline = "1px solid blue";
+}
+
+let borderColorRed = document.querySelector('#borderColorRed');
+let borderColorGreen = document.querySelector('#borderColorGreen');
+let borderColorBlue = document.querySelector('#borderColorBlue');
+
+borderColorRed?.addEventListener('click', () => {
+    myBorderColorRed();
+});
+borderColorGreen?.addEventListener('click', () => {
+    myBorderColorGreen();
+});
+borderColorBlue?.addEventListener('click', () => {
+    myBorderColorBlue();
+});
+
+function myResetAll() {
+    document.querySelector('#colorText').style.color = "";
+    document.querySelector('#colorText').style.outline = "";
+    document.querySelector('#colorText').style.cursor = "";
+    
+  }
+  let resetAll = document.querySelector('#resetAll');
+  
+  resetAll?.addEventListener('click', () => {
+      myResetAll();
+  });
