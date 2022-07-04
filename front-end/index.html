@@ -34,8 +34,7 @@
                 <button class="btn btn-outline-secondary" type="button" id="first-lower-case">First Lower Case</button>
             </div>
         </div>
-    </div>
-    
+    </div>    
     <div class="card mb-3">
         <div class="card-header mb-3">
           <a>Paspaudus mygtuką patikrinkite įvestas reikšmes ir jeigu reikia parodykite klaidų pranešimus</a>
@@ -53,7 +52,7 @@
                   <div class="col-sm-10">
                     <input type="email" class="form-control" id="email" placeholder="Enter email" aria-describedby="emailCheck" required>
                       <div id="emailCheck" class="invalid-feedback">
-                          Please check email
+                        Please check email
                       </div>                  
                   </div>
                 </div>
@@ -103,76 +102,67 @@
           </div>                       
         </div>
     </div>
-    <div class="card mb-3">
-        <div class="card-header">
-            <a>Paspaudus ant mygtuko turi "iškristi" menu su punktais. Paspaudžius punktą turi įvykti veiksmas</a>            
-        </div>
-        <div class="card-body">
-          <div id="colorText" style="text-align:end">
-            <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>              
-                <li><i>Someone famous in Source Title</i></li>              
-          </div>            
-            <div class="input-group mb-3">                
-                <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Cursor</button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#" id="cursorPointer">Pointer</a></li>
-                  <li><a class="dropdown-item" href="#" id="cursorText">Text</a></li>
-                  <li><a class="dropdown-item" href="#" id="cursorHelp">Help</a></li>                  
-                </ul>
-                <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Colors</button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#" id="colorRed">Red</a></li>
-                  <li><a class="dropdown-item" href="#" id="colorGreen">Green</a></li>
-                  <li><a class="dropdown-item" href="#" id="colorBlue">Blue</a></li>                  
-                </ul>
-                <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Borders</button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#" id="borderColorRed">Red</a></li>
-                  <li><a class="dropdown-item" href="#" id="borderColorGreen">Green</a></li>
-                  <li><a class="dropdown-item" href="#" id="borderColorBlue">Blue</a></li>                  
-                </ul>
-                <button class="btn btn-success" type="button" id="resetAll">Reset all</button>               
-            </div>               
-        </div>
+    <div class="card mt-2">
+      <h5 class="card-header">Paspaudus ant mygtuko turi "iškristi" meniu su punktais. Paspaudus punktą turi įvykti veiksmas</h5>
+      <div id="colorText" style="text-align:end">
+        <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>              
+          <li><i>Someone famous in Source Title</i></li>              
+      </div>
+      <div class="row p-3">
+          <div class="col-1 btn-group" role="group">
+            <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Cursor</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" id="cursorPointer">Pointer</a></li>
+              <li><a class="dropdown-item" href="#" id="cursorText">Text</a></li>
+              <li><a class="dropdown-item" href="#" id="cursorHelp">Help</a></li>                  
+            </ul>
+          </div>
+          <div class="col-1 btn-group" role="group">
+            <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Colors</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" id="colorRed">Red</a></li>
+              <li><a class="dropdown-item" href="#" id="colorGreen">Green</a></li>
+              <li><a class="dropdown-item" href="#" id="colorBlue">Blue</a></li>                  
+            </ul>
+          </div>
+          <div class="col-1 btn-group" role="group">
+            <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Borders</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" id="borderColorRed">Red</a></li>
+              <li><a class="dropdown-item" href="#" id="borderColorGreen">Green</a></li>
+              <li><a class="dropdown-item" href="#" id="borderColorBlue">Blue</a></li>                  
+            </ul>
+          </div>
+          <div class="col-2 btn-group" role="group">
+            <button class="btn btn-success" type="button" id="resetAll">Reset all</button>
+          </div>
+      </div>
+
     </div>
+
     <div class="card mb-3" id="myModal">
-        <div class="card-header">          
-          <a>Paspaudus mygtuką parodykite informaciją apie save modaline lange</a>
-            <div class="card-body">
-              <div class="card-body row p-3 justify-content-center">
-                <button type="button" class="btn btn-primary col-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch modal</button>
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Information</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                      <div class="modal-body">Some text</div>
+      <div class="card-header">          
+        <a>Paspaudus mygtuką parodykite informaciją apie save modaline lange</a>
+        <div class="card-body row p-3 justify-content-center">
+        <button type="button" class="btn btn-primary col-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch modal</button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Information</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="modal-body">Some text</div>
                     <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
-                  </div>
                 </div>
               </div>
-            </div> 
+            </div>
+          </div> 
         </div>
       </div>  
     </div>       
-    <!-- <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-        Dropdown button
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
-    </div> -->
-    <!-- kad veiktu dropdoqn -->
-
-
-    
+    <!-- kad veiktu dropdoqn -->    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 </body>
