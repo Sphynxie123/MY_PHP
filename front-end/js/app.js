@@ -4,14 +4,13 @@ btn?.addEventListener('click', () => alert('Hello World!'));
 
 let inputCaseChange = document.querySelector('#input-case-change');
 
-document.querySelector('#to-upper-case')?.addEventListener('click', (e) =>{
-    e.preventDefault();
+document.querySelector('#to-upper-case')?.addEventListener('click', () =>{
+    
     // console.log(inputCaseChange.value);
     inputCaseChange.value = inputCaseChange.value.toUpperCase();
 });
 
-document.querySelector('#to-lower-case')?.addEventListener('click', (e) =>{
-    e.preventDefault();
+document.querySelector('#to-lower-case')?.addEventListener('click', () =>{    
     // console.log(inputCaseChange.value);
     inputCaseChange.value = inputCaseChange.value.toLowerCase();
 });
@@ -21,15 +20,15 @@ function capitalizeFirstLetter(inputCaseChange) {
     return inputCaseChange.value.charAt(0).toUpperCase() + inputCaseChange.value.slice(1);
 }
 // jei id dedam #.....
-document.querySelector('#first-upper-case')?.addEventListener('click', (e) =>{
-    e.preventDefault();    
+document.querySelector('#first-upper-case')?.addEventListener('click', () =>{
+       
     inputCaseChange.value = capitalizeFirstLetter(inputCaseChange);
 });
 function writeInLowerCaseFirstLetter(inputCaseChange) {
     return inputCaseChange.value.charAt(0).toLowerCase() + inputCaseChange.value.slice(1);
 }
-document.querySelector('#first-lower-case')?.addEventListener('click', (e) =>{
-    e.preventDefault();
+document.querySelector('#first-lower-case')?.addEventListener('click', () =>{
+    
     inputCaseChange.value = writeInLowerCaseFirstLetter(inputCaseChange);
 });
 
