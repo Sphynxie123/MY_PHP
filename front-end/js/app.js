@@ -62,7 +62,6 @@ let btnBlock = document.querySelector('#block');
 let btnUnblock = document.querySelector('#unblock');
 
 btnBlock?.addEventListener('click', () => document.querySelector("#inpBlockUnblock").disabled = true);
-
 btnUnblock?.addEventListener('click', () => document.querySelector("#inpBlockUnblock").disabled = false);
 
 let img = document.querySelector('#image');
@@ -95,8 +94,7 @@ colorGreen?.addEventListener('click', () => document.querySelector('#colorText')
 colorBlue?.addEventListener('click', () => document.querySelector('#colorText').style.color = "blue");
 // border color
 
-    // kodel netinka borderColor = "1px solid red"; ????
-
+// kodel netinka borderColor = "1px solid red"; ????
 borderColorRed?.addEventListener('click', () => document.querySelector('#colorText').style.outline = "1px solid red");
 borderColorGreen?.addEventListener('click', () => document.querySelector('#colorText').style.outline = "1px solid green");
 borderColorBlue?.addEventListener('click', () => document.querySelector('#colorText').style.outline = "1px solid blue");
@@ -104,11 +102,13 @@ borderColorBlue?.addEventListener('click', () => document.querySelector('#colorT
 function myResetAll() {
     document.querySelector('#colorText').style.color = "";
     document.querySelector('#colorText').style.outline = "";
-    document.querySelector('#colorText').style.cursor = "";
-    
+    document.querySelector('#colorText').style.cursor = "";    
   }
   let resetAll = document.querySelector('#resetAll');
-  
-  resetAll?.addEventListener('click', () => {
+
+  resetAll?.addEventListener('click', (e) => {
+    // e.preventDefault(); kadangi tai yra linkas, kad paspaudus nešokinėtu į viršų.
+    // e.preventDefault();
       myResetAll();
   });
+ 
