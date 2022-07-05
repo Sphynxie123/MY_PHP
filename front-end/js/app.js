@@ -1,11 +1,6 @@
-function myFunction(){
-    alert('Hello World!');
-}
 let btn = document.querySelector('.btn');
 
-btn?.addEventListener('click', () => {
-    myFunction();
-});
+btn?.addEventListener('click', () => alert('Hello World!'));
 
 let inputCaseChange = document.querySelector('#input-case-change');
 
@@ -65,24 +60,10 @@ btnSave?.addEventListener('click', function() {
 
 let btnBlock = document.querySelector('#block');
 let btnUnblock = document.querySelector('#unblock');
-let inpBlockUnblock = document.querySelector('#inpBlockUnblock');
 
-function myBlock() {
-    document.querySelector("#inpBlockUnblock").disabled = true;
-}
+btnBlock?.addEventListener('click', () => document.querySelector("#inpBlockUnblock").disabled = true);
 
-function myUnBlock() {
-    document.querySelector("#inpBlockUnblock").disabled = false;
-}
-btnBlock?.addEventListener('click', () => {
-    
-    myBlock();
-});
-
-btnUnblock?.addEventListener('click', () => {
-    
-    myUnBlock();
-});
+btnUnblock?.addEventListener('click', () => document.querySelector("#inpBlockUnblock").disabled = false);
 
 let img = document.querySelector('#image');
 // keičiasi foto užvedant pele ir patraukiant
@@ -93,76 +74,32 @@ img?.addEventListener('mouseleave', function() {
     img.setAttribute('src', 'https://i.imgur.com/0DElr0H.jpg');
 });
 // Cursor
-function myCursorPointer() {
-    document.querySelector('#colorText').style.cursor = 'pointer';
-}
-function myCursorText() {
-    document.querySelector('#colorText').style.cursor = 'text';
-}
-function myCursorHelp() {
-    document.querySelector('#colorText').style.cursor = 'help';
-}
-let cursorPointer = document.querySelector('#cursorPointer');
-let cursorHelp = document.querySelector('#cursorHelp');
-let cursorText = document.querySelector('#cursorText');
-
-cursorPointer?.addEventListener('click', () => {
-    myCursorPointer();
-});
-cursorText?.addEventListener('click', () => {
-    myCursorText();
-});
-cursorHelp?.addEventListener('click', () => {
-    myCursorHelp();
-});
+// function myCursorPointer() {
+//     document.querySelector('#colorText').style.cursor = 'pointer';
+// }
+// let cursorPointer = document.querySelector('#cursorPointer');
+// function myCursorPointer() {
+//     document.querySelector('#colorText').style.cursor = 'pointer';
+// }
+// cursorPointer?.addEventListener('click', () => {
+//     myCursorPointer();
+// });
+// arba apačioje
+cursorPointer?.addEventListener ('click', ()=> document.querySelector('#colorText').style.cursor = 'pointer');
+cursorText?.addEventListener('click', () => document.querySelector('#colorText').style.cursor = 'text');
+cursorHelp?.addEventListener('click', () => document.querySelector('#colorText').style.cursor = 'help');
 // text color
-function myColorRed(){
-	document.querySelector('#colorText').style.color = "red";
-}
-function myColorGreen(){
-	document.querySelector('#colorText').style.color = "green";
-}
-function myColorBlue(){
-	document.querySelector('#colorText').style.color = "blue";
-}
-let colorRed = document.querySelector('#colorRed');
-let colorGreen = document.querySelector('#colorGreen');
-let colorBlue = document.querySelector('#colorBlue');
 
-colorRed?.addEventListener('click', () => {
-    myColorRed();
-});
-colorGreen?.addEventListener('click', () => {
-    myColorGreen();
-});
-colorBlue?.addEventListener('click', () => {
-    myColorBlue();
-});
+colorRed?.addEventListener('click', () => document.querySelector('#colorText').style.color = "red");
+colorGreen?.addEventListener('click', () => document.querySelector('#colorText').style.color = "green");
+colorBlue?.addEventListener('click', () => document.querySelector('#colorText').style.color = "blue");
 // border color
-function myBorderColorRed(){
+
     // kodel netinka borderColor = "1px solid red"; ????
-    document.querySelector('#colorText').style.outline = "1px solid red";
-}
-function myBorderColorGreen(){
-    document.querySelector('#colorText').style.outline = "1px solid green";
-}
-function myBorderColorBlue(){
-    document.querySelector('#colorText').style.outline = "1px solid blue";
-}
 
-let borderColorRed = document.querySelector('#borderColorRed');
-let borderColorGreen = document.querySelector('#borderColorGreen');
-let borderColorBlue = document.querySelector('#borderColorBlue');
-
-borderColorRed?.addEventListener('click', () => {
-    myBorderColorRed();
-});
-borderColorGreen?.addEventListener('click', () => {
-    myBorderColorGreen();
-});
-borderColorBlue?.addEventListener('click', () => {
-    myBorderColorBlue();
-});
+borderColorRed?.addEventListener('click', () => document.querySelector('#colorText').style.outline = "1px solid red");
+borderColorGreen?.addEventListener('click', () => document.querySelector('#colorText').style.outline = "1px solid green");
+borderColorBlue?.addEventListener('click', () => document.querySelector('#colorText').style.outline = "1px solid blue");
 
 function myResetAll() {
     document.querySelector('#colorText').style.color = "";
