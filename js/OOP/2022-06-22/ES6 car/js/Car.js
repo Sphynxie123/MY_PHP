@@ -17,19 +17,17 @@ class Car {
         this.year = year;
     }
     // getIntroduction, kuris grąžins pilną pavadinimą (su make ir model).
-    getIntroduction = () => {
+   
+    getIntroduction(){
         return `${this.make} ${this.model}`;
-    } 
-    getAge = function(){
-        let date = new Date();
-        let years = date.getFullYear();
-        return ((years - this.year)<=10) ? '10 metų arba jaunesnis' : '11 metų arba senesnis';
     }  
-    // getAge(){
-    //     let date = new Date();
-    //     let years = date.getFullYear();
-    //     return ((years - this.year)<=10) ? '10 metų arba jaunesnis' : '11 metų arba senesnis';
-    // }        
+    getAge(){
+        let date = new Date();
+        // naudojam specialiai getFullYear() googlintis
+        let years = date.getFullYear();
+        // vietoj teksto 10 metų arba jaunesnis' : '11 metų arba senesnis' priskirti pvz let  msg = '10 metų arba jaunesnis';
+        return ((years - this.year)<=10) ? '10 metų arba jaunesnis' : '11 metų arba senesnis';
+    }        
 }
 class Motorcycle extends Car{
     constructor(make, model, year, wheels){

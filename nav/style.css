@@ -1,0 +1,25 @@
+body {
+    background-color: aqua;
+    height 100vh;
+}
+section {
+    background-color: antiquewhite;
+    margin: 5px;
+}
+ul{
+    list-style-type: none
+    
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+nav {
+    background-color: antiquewhite;
+}
+.container {
+    display: flex;    
+}
+li:nth-child(8){
+    float: right;
+}

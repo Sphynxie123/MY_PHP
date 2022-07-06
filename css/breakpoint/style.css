@@ -13,7 +13,7 @@ div {
 .two,
 .three,
 .four{
-    width: 24vh;        
+    width: 27vh;        
 }
 .five,
 .six,
@@ -69,7 +69,7 @@ a:hover {
     .five,
     .six {
         display: block;
-        width: 25vh;
+        width: 27vh;
     }
     div {
         margin: 5px;

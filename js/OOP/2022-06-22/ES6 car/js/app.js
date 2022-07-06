@@ -1,9 +1,9 @@
-let Car1 = new Car('VW', 'Golf', 2010);
-let Motorcycle1 = new Motorcycle('Harley-Davidson', 'Cruiser', 2015, 6); 
+let car1 = new Car('VW', 'Golf', 2010);
+let motorcycle1 = new Motorcycle('Harley-Davidson', 'Cruiser', 2015, 6); 
 
-console.log(Car1.getIntroduction());
-console.log(Car1.getAge());
+console.log(car1.getIntroduction());
+console.log(car1.getAge());
 
-console.log(Motorcycle1.getWheelsNumber());
+console.log(motorcycle1.getWheelsNumber());
 
 

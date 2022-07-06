@@ -1,0 +1,104 @@
+.one,
+.two {
+   
+    height: 150px;
+    background-color: orange;
+}
+.three{
+    
+    height: 175px;
+    background-color: yellowgreen;
+}
+.four,
+.five,
+.six{
+    
+    height: 250px;
+    background-color: blue;
+}
+
+.seven {
+    display: block;
+    height: 150px;
+    background-color: gray;
+}
+/* naikinam 8,9,10 kad nesimatytu ekrane dispplay:none 
+bet kad matytusi 4 blokai reikia 58 eiluteje parasyti display:block;
+*/
+.eight,
+.nine,
+.ten{
+       display: none;
+    }
+
+div {
+    width: 100vh;
+    margin: 2px;
+}
+@media only screen and (min-width: 768px) {
+	
+    .container2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .three {
+        height: 300px;
+        
+    }
+    .four,
+    .five,
+    .six{
+        height: 175px;        
+    }    
+    .seven,
+    .eight,
+    .nine,
+    .ten{
+        /* Reikia parašyti, kad matytusi keturi blokai */
+        display: block;
+        width: 40vh;        
+        height: 150px;
+        flex-grow: 1;      
+        background-color: gray;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .container3,
+    .container4 {
+        display: flex;
+    } 
+    .container3 {
+        flex-wrap: row;
+    }
+    .one,
+    .two {
+        
+        width: 50vh;
+        height: 150px;
+        flex-grow: 1;    
+}   
+    .three {
+        flex-grow: 1;
+    }
+    .container1,
+    .container2
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .four,
+    .five,
+    .six{
+        flex-grow: 1;
+        width: 28vh;
+    }
+    .seven,
+    .eight,
+    .nine,
+    .ten{
+        width: 24vh;        
+        height: 150px;       
+    }
+
+}

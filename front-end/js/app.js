@@ -57,11 +57,16 @@ btnSave?.addEventListener('click', function() {
     }
 });
 
-let btnBlock = document.querySelector('#block');
-let btnUnblock = document.querySelector('#unblock');
+// let btnBlock = document.querySelector('#block');
+// let btnUnblock = document.querySelector('#unblock');
 
-btnBlock?.addEventListener('click', () => document.querySelector("#inpBlockUnblock").disabled = true);
-btnUnblock?.addEventListener('click', () => document.querySelector("#inpBlockUnblock").disabled = false);
+// btnBlock?.addEventListener('click', () => document.querySelector("#inpBlockUnblock").disabled = true);
+// btnUnblock?.addEventListener('click', () => document.querySelector("#inpBlockUnblock").disabled = false);
+// arba
+let inpBlockUnblock = document.querySelector("#inpBlockUnblock");
+
+document.querySelector('#block')?.addEventListener('click', () => inpBlockUnblock.disabled = true);
+document.querySelector('#unblock')?.addEventListener('click', () => inpBlockUnblock.disabled = false);
 
 let img = document.querySelector('#image');
 // keičiasi foto užvedant pele ir patraukiant
@@ -83,30 +88,33 @@ img?.addEventListener('mouseleave', function() {
 //     myCursorPointer();
 // });
 // arba apačioje
-cursorPointer?.addEventListener ('click', ()=> document.querySelector('#colorText').style.cursor = 'pointer');
-cursorText?.addEventListener('click', () => document.querySelector('#colorText').style.cursor = 'text');
-cursorHelp?.addEventListener('click', () => document.querySelector('#colorText').style.cursor = 'help');
+
+let colorText = document.querySelector('#colorText');
+
+cursorPointer?.addEventListener ('click', ()=> colorText.style.cursor = 'pointer');
+cursorText?.addEventListener('click', () => colorText.style.cursor = 'text');
+cursorHelp?.addEventListener('click', () => colorText.style.cursor = 'help');
 // text color
 
-colorRed?.addEventListener('click', () => document.querySelector('#colorText').style.color = "red");
-colorGreen?.addEventListener('click', () => document.querySelector('#colorText').style.color = "green");
-colorBlue?.addEventListener('click', () => document.querySelector('#colorText').style.color = "blue");
+colorRed?.addEventListener('click', () => colorText.style.color = "red");
+colorGreen?.addEventListener('click', () => colorText.style.color = "green");
+colorBlue?.addEventListener('click', () => colorText.style.color = "blue");
 // border color
 
 // kodel netinka borderColor = "1px solid red"; ????
-borderColorRed?.addEventListener('click', () => document.querySelector('#colorText').style.outline = "1px solid red");
-borderColorGreen?.addEventListener('click', () => document.querySelector('#colorText').style.outline = "1px solid green");
-borderColorBlue?.addEventListener('click', () => document.querySelector('#colorText').style.outline = "1px solid blue");
+borderColorRed?.addEventListener('click', () => colorText.style.outline = "1px solid red");
+borderColorGreen?.addEventListener('click', () => colorText.style.outline = "1px solid green");
+borderColorBlue?.addEventListener('click', () => colorText.style.outline = "1px solid blue");
 
 function myResetAll() {
-    document.querySelector('#colorText').style.color = "";
-    document.querySelector('#colorText').style.outline = "";
-    document.querySelector('#colorText').style.cursor = "";    
+    colorText.style.color = "";
+    colorText.style.outline = "";
+    colorText.style.cursor = "";    
   }
   let resetAll = document.querySelector('#resetAll');
 
   resetAll?.addEventListener('click', (e) => {
-    // e.preventDefault(); kadangi tai yra linkas, kad paspaudus nešokinėtu į viršų.
+    // // e.preventDefault(); kadangi tai yra linkas, kad paspaudus nešokinėtu į viršų. 116 eiliteje e nereikalingas
     // e.preventDefault();
       myResetAll();
   });

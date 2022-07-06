@@ -1,0 +1,171 @@
+/* 
+-- Menu font-family: Lato, sans-serif;
+-- Menu font color: #151515
+-- Menu button background-color: #b6b6b6
+*/
+
+/* YOUR CODE HERE ir beje sėkmės*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+
+.navbar {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+
+/* navbar (flexbox) items */
+.nav-logo-cont {
+	margin-right: auto;
+}
+
+.nav-logo-cont img {
+	height: 2.5rem;
+	vertical-align: middle;
+}
+
+.navbar a,
+.navbar a:visited {
+	display: block;
+	line-height: 2.5rem;
+	text-decoration: none;
+	color: #151515;
+	padding: 0 10px;
+}
+
+.navbar a:hover {
+	background-color: lightgrey;
+}
+
+.navbar ul {
+	list-style-type: none;
+}
+
+.ul-nav-links {
+	margin: 0;
+	padding: 0;
+	top: 5rem;
+	/*left: -150%;*/
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	background-color: white;
+	display: none;
+	flex-direction: column;
+}
+
+a.nav-btn {
+	text-align: center;
+	width: 100%;
+	background-color: #b6b6b6;
+}
+
+
+.ul-nav-icons {
+	display: flex;
+	gap: 5px;
+	padding: 0;
+	margin: auto 30px;
+}
+
+.ul-nav-icons a {
+	line-height: 1.5rem;
+	padding: 3px 5px;
+	border-radius: 5px;
+}
+
+.nav-hamburger-cont {
+	margin: auto 10px;
+	cursor: pointer;
+}
+
+.bi-list, .bi-x {
+	display: none;
+	font-size: 2rem;
+}
+
+.nav-btn-cont {
+	display: none;
+	/*left: -150%;*/
+	position: absolute;
+	top: 2.5rem;
+	width: 100%;
+}
+
+
+/* js-activated classes */
+.nav-active {
+	/*left: 0;*/
+	display: flex;
+}
+.burger-active {
+	display: inline;
+}
+
+
+/* images */
+.gallery-cont {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 25px;
+}
+
+.img-cont {
+	width: 44vw;
+}
+
+.img-cont img {
+	aspect-ratio: 0.6;
+	width: 100%;
+	object-fit: cover;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+	.ul-nav-links {
+		display: flex;
+		position: static;
+		flex-direction: row;
+		justify-content: right;
+	}
+
+	.nav-btn-cont {
+		display: flex;
+		position: static;
+		width: 200px;
+	}
+
+	.nav-hamburger-cont {
+		display: none;
+	}
+
+	.img-cont {
+		width: 29vw;
+	}
+
+	.img-cont img {
+		aspect-ratio: 0.8;
+	}
+}
+
+
+@media only screen and (min-width: 1200px) {
+	.img-cont {
+		width: 18vw;
+	}
+
+	.img-cont img {
+		aspect-ratio: 1;
+	}
+}
