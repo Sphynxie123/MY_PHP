@@ -1,8 +1,26 @@
+// 3 routes: os, cpu, ram
+
 const express = require('express');
 const app = express();
 const os = require('node:os');
+const port = 3000;
+
 
 app
+// .get('/', function(req, res) {
+//     let routeStack = app._router.stack;
+//     let resContent = '';
+
+//     for (const key in routeStack) {
+//         if (routeStack[key].route && routeStack[key].route.path) {
+//             let path = routeStack[key].route.path;
+            
+//             resContent += `<p><a href="${path}">${path}</a></p>`;
+//         }
+//     }
+
+//     res.send(resContent);
+// })
 .get('/cpu', function(req, res) {
     let cpu = {
         model: os.cpus()[0].model,
@@ -28,4 +46,5 @@ app
     res.send(JSON.stringify(opSys));
 });
 
-app.listen(3000, () => console.log('Server at 3000.'));
+app.listen(3000, () => console.log(`Server started on port ${port}`));
+// i cmd pasileidziame rašome npi i (instaluojame) tada pasileidziame 
